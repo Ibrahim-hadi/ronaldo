@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISTIANO RONALDO | OFFICIAL WEBSITE</title>
+    <link rel="icon" type="xicon/image" href="cr7-modified.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --cr7-red: #d62828;
+            --cr7-gold: #fca311;
+            --dark-bg: #121212;
+            --light-text: #f8f9fa;
+            --section-padding: 80px 0;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(18, 18, 18, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--light-text);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--cr7-red);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--cr7-red);
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-links a.active {
+            color: var(--cr7-red);
+        }
+        
+        .nav-links a.active:after {
+            width: 100%;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('data:image/jpeg;base64,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') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(to right, var(--cr7-gold), var(--cr7-red));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #e9ecef;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--cr7-red);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--cr7-red);
+        }
+        
+        .cta-button:hover {
+            background: transparent;
+            color: var(--cr7-red);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(214, 40, 40, 0.3);
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .stat-item {
+            padding: 20px;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--cr7-red);
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--cr7-gold);
+        }
+        
+        /* Brands Section */
+        .brands {
+            padding: var(--section-padding);
+            text-align: center;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            display: inline-block;
+            padding-bottom: 15px;
+            position: relative;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--cr7-red);
+        }
+        
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .brand-card {
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .brand-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .brand-img {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #121212;
+        }
+        
+        .brand-img img {
+            max-width: 70%;
+            max-height: 150px;
+            object-fit: contain;
+        }
+        
+        .brand-info {
+            padding: 20px;
+        }
+        
+        .brand-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--cr7-gold);
+        }
+        
+        .brand-info p {
+            font-size: 0.9rem;
+            color: #adb5bd;
+        }
+        
+        /* Career Highlights */
+        .career {
+            padding: var(--section-padding);
+            background: url('https://images.unsplash.com/photo-1621274403997-37aace184f49?ixlib=rb-4.0.3') no-repeat center center/cover;
+            position: relative;
+        }
+        
+        .career::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+        }
+        
+        .career .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--cr7-red);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+        
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--cr7-red);
+            top: 30px;
+            border-radius: 50%;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            right: -40px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -40px;
+        }
+        
+        .timeline-year {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--cr7-gold);
+            margin-bottom: 10px;
+        }
+        
+        .timeline-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Life Museum Section */
+        .museum {
+            padding: var(--section-padding);
+            background: #0d0d0d;
+        }
+        
+        .museum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .museum-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 350px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        
+        .museum-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .museum-img {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .museum-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            color: white;
+            transform: translateY(60px);
+            transition: transform 0.4s ease;
+        }
+        
+        .museum-item:hover .museum-overlay {
+            transform: translateY(0);
+        }
+        
+        .museum-overlay h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--cr7-gold);
+        }
+        
+        .museum-overlay p {
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .museum-item:hover .museum-overlay p {
+            opacity: 1;
+            max-height: 100px;
+            transition-delay: 0.2s;
+        }
+        
+        /* Partners Section */
+        .partners {
+            padding: var(--section-padding);
+            text-align: center;
+        }
+        
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        
+        .partner-logo {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+        
+        .partner-logo img {
+            max-width: 100%;
+            max-height: 60px;
+            object-fit: contain;
+        }
+        
+        /* Footer */
+        footer {
+            background: #0d0d0d;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--cr7-gold);
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--cr7-red);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--cr7-red);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #1a1a1a;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background: var(--cr7-red);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #1a1a1a;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 4rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-content::after {
+                left: 15px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--dark-bg);
+                flex-direction: column;
+                gap: 0;
+                padding: 20px 0;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                padding: 15px 20px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .museum-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="https://www.cristianoronaldo.com/assets/logos/cr7.svg" alt="CR7 Logo">
+            </div>
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#brands">Brands</a>
+                <a href="#career">Career Highlights</a>
+                
+                <a href="#museum">Life Museum</a>
+                <a href="#partners">Partners</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Cristiano Ronaldo</h1>
+            <p>The greatest footballer of all time. Legend. Icon. Champion.</p>
+            <a href="#brands" class="cta-button">Explore CR7 Brands</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Ballon d'Or</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">850+</div>
+                <div class="stat-label">Career Goals</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">34</div>
+                <div class="stat-label">Major Trophies</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">203</div>
+                <div class="stat-label">International Cups</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <div class="section-title">
+                <h2>CR7 Brands</h2>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-img">
+                        <img src="https://www.cristianoronaldo.com/assets/images/brand_ursu.jpg?t=2067825244" alt="CR7 Ursu">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CR7 Ursu</h3>
+                        <p>Premium eyewear collection designed for the modern athlete. Combining style and performance for everyday champions.</p>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-img">
+                        <img src="https://www.cristianoronaldo.com/assets/images/brand_erakulis.jpg?t=2067825244" alt="CR7 Era Kulis">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CR7 Era Kulis</h3>
+                        <p>Revolutionary fitness equipment designed to enhance athletic performance and recovery for professional athletes.</p>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-img">
+                        <img src="https://www.cristianoronaldo.com/assets/images/brand_fragrances.jpg?t=3770778324" alt="CR7 Fragrances">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CR7 Fragrances</h3>
+                        <p>Signature scents embodying confidence, passion, and success. For those who strive to be the best.</p>
+                    </div>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-img">
+                        <img src="https://www.cristianoronaldo.com/assets/images/brand_footwear.jpg?t=892735" alt="CR7 Footwear">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CR7 Footwear</h3>
+                        <p>High-performance footwear engineered for athletes who demand the best in comfort and technology.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Highlights -->
+    <section class="career" id="career">
+        <div class="container">
+            <div class="section-title">
+                <h2>Career Highlights</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2003</div>
+                        <h3 class="timeline-title">Manchester United Debut</h3>
+                        <p>Signed by Sir Alex Ferguson at age 18. Won his first Ballon d'Or in 2008.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2009</div>
+                        <h3 class="timeline-title">Real Madrid Transfer</h3>
+                        <p>World record transfer fee of £80 million. Became Real Madrid's all-time top scorer.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2016</div>
+                        <h3 class="timeline-title">Euro 2016 Victory</h3>
+                        <p>Captained Portugal to their first major international trophy.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2018</div>
+                        <h3 class="timeline-title">Juventus Transfer</h3>
+                        <p>Moved to Juventus for €100 million. Won Serie A in his first season.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021</div>
+                        <h3 class="timeline-title">Return to Manchester United</h3>
+                        <p>Emotional return to Old Trafford. Became the all-time top international goalscorer.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3 class="timeline-title">Al Nassr & Global Icon</h3>
+                        <p>Moved to Saudi Arabia, continuing to break records and expand his global brand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life Museum Section -->
+    <section class="museum" id="museum">
+        <div class="container">
+            <div class="section-title">
+                <h2>Life Museum</h2>
+            </div>
+            <div class="museum-grid">
+                <div class="museum-item">
+                    <div class="museum-img" style="background-image: url('images/born.jpg');">
+                        <div class="museum-overlay">
+                            <h3>Early Years in Madeira</h3>
+                            <p>Cristiano Ronaldo dos Santos Aveiro was born on February 5, 1985, in Funchal, Madeira, Portugal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="museum-item">
+                    <div class="museum-img" style="background-image: url('images/lisron.jfif');">
+                        <div class="museum-overlay">
+                            <h3>Sporting Lisbon</h3>
+                            <p>At age 12, Ronaldo left Madeira for Lisbon to join Sporting CP's youth academy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="museum-item">
+                    <div class="museum-img" style="background-image: url('images/ronaldomanchest.jfif');">
+                        <div class="museum-overlay">
+                            <h3>Manchester United Debut</h3>
+                            <p>Signed by Sir Alex Ferguson in 2003 after impressing in a friendly match.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="museum-item">
+                    <div class="museum-img" style="background-image: url('images/real.jfif');">
+                        <div class="museum-overlay">
+                            <h3>Real Madrid Legend</h3>
+                            <p>Scored a record 450 goals in 438 appearances for Los Blancos.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="museum-item">
+                    <div class="museum-img" style="background-image: url('images/euro.jfif');">
+                        <div class="museum-overlay">
+                            <h3>Euro 2016 Triumph</h3>
+                            <p>Captained Portugal to their first major international trophy.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="museum-item">
+                    <div class="museum-img" style="background-image: url('images/alnassr.jfif');">
+                        <div class="museum-overlay">
+                            <h3>al nassr debut</h3>
+                            <p>Ronaldo likely to make his Al Nassr debut in friendly against Messi, Paris Saint-Germain.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="museum-item">
+                    <div class="museum-img" style="background-image: url('images/alnassrgoal.jfif');">
+                        <div class="museum-overlay">
+                            <h3>900 goals</h3>
+                            <p>Al-Nassr honored Cristiano Ronaldo with a special jersey for reaching 900 career goals 💫</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="museum-item">
+                    <div class="museum-img" style="background-image: url('images/donation.jfif');">
+                        <div class="museum-overlay">
+                            <h3>Global Philanthropy</h3>
+                            <p>Donated millions to children's hospitals and disaster relief efforts worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <div class="section-title">
+                <h2>Official Partners</h2>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images/nike.png" alt="Nike">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/clear.jfif" alt="Clear">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/herbalife.png" alt="Herbalife">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/alice.jfif" alt="Altice">
+                </div>
+                
+                <div class="partner-logo">
+                    <img src="images/pign.png" alt="Ping An">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CR7 Brands</h3>
+                    <ul>
+                        <li><a href="#">Footwear</a></li>
+                        <li><a href="#">Underwear</a></li>
+                        <li><a href="#">Fragrances</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Fitness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Career</h3>
+                    <ul>
+                        <li><a href="#">Statistics</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Clubs</a></li>
+                        <li><a href="#">National Team</a></li>
+                        <li><a href="#">Records</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Foundation</h3>
+                    <ul>
+                        <li><a href="#">About CR7 Foundation</a></li>
+                        <li><a href="#">Charity Work</a></li>
+                        <li><a href="#">Donations</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <p>Follow Cristiano on social media:</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Cristiano Ronaldo Official Website. All rights reserved. | Designed with Passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.5)';
+            } else {
+                header.style.padding = '15px 0';
+                header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.5)';
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Update active class in navigation
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Update active class based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
